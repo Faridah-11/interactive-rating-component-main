@@ -17,7 +17,7 @@ div.content{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-div .card{
+div.card{
     background: var(--black-gradient, radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%));
     padding: 1.5em;
     border-radius: 1.7em;
@@ -137,34 +137,36 @@ div.card .response .selected{
     div.card{
         padding: 1em;
         border-radius: 0.938em;
+        gap: 1em;
     }
-}div.card h3{
-    font-size: 1.5em;
-}
-div.card p{
-    line-height: 1.375em;
-}
-div.card .ratings-btns{
-    display: flex;
-    flex-direction: row;
-    gap: 0.5em;
-}
-div.card .ratings-btns button{
-    width: 2em;
-    height: 2em;
-    line-height: 1em;
-    font-size: 0.938em;
-    letter-spacing: 0.011em;
-}
-div.card button{
-    letter-spacing: 0.117em;
-}
-div.card .response{
-    gap: 1em;
-}
-div.card .response img{
-    width: 9em;
-    height: 6em;
-    flex-shrink: 0;
-    margin: 0 auto;
+    div.card h3{
+        font-size: 1.5em;
+    }
+    div.card p{
+        line-height: 1.375em;
+    }
+    div.card .ratings-btns{
+        display: flex;
+        flex-direction: row;
+        gap: 0.5em;
+    }
+    div.card .ratings-btns button{
+        width: 2em;
+        height: 2em;
+        line-height: 1em;
+        font-size: 0.938em;
+        letter-spacing: 0.011em;
+    }
+    div.card button{
+        letter-spacing: 0.117em;
+    }
+    div.card .response{
+        gap: 1em;
+    }
+    div.card .response img{
+        width: 9em;
+        height: 6em;
+        flex-shrink: 0;
+        margin: 0 auto;
+    }
 }
