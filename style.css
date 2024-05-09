@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Overpass;
+    font-feature-settings: 'clig' off, 'liga' off;
+}
+body{
+    background: var(--Very-Dark-Blue, #131518);
+}
+button{
+    cursor: pointer;
+}
+div.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div .card{
+    background: var(--black-gradient, radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%));
+    padding: 1.5em;
+    border-radius: 1.7em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    width: 65%;
+    margin: 0 auto;
+}
+div.card .circle{
+    text-align: center;
+    border: 1px solid  #262E38;
+    background-color: var(--Dark-Blue, #262E38);
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    flex-shrink: 0;
+    line-height:3em;
+}
+div.card h3{
+    color: var(--Pure-White, #FFF);
+    font-size: 1.75em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+div.card p{
+    color: var(--Light-Grey, #969FAD);
+    font-size: 0.938em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5em; /* 160% */
+}
+div.card .ratings-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.card .ratings-btns button{
+    border-radius: 50%;
+    width: 3.188em;
+    height: 3.188em;
+    flex-shrink: 0;
+
+    color: var(--Medium-Gray, #7C8798);
+    text-align: center;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5em; /* 150% */
+    letter-spacing: 0.013em;
+    background-color: var(--Dark-Blue, #262E38);;
+}
+div.card .ratings-btns button:hover{
+    background-color: #FC7614;
+    color: #FFF;
+}
+div.card .ratings-btns button:focus{
+    background-color: var(--Medium-Gray, #7C8798);
+    color: #fff;
+}
+div.card button{
+    width: 100%;
+    border-radius: 22.5px;
+    background: var(--Orange, #FC7614);
+    border: none;
+    height: 2.813em;
+    color: var(--Pure-White, #FFF);
+    font-size: 0.938em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.125em;
+}
+div.card button:hover{
+    background: var(--Pure-White, #FFF);
+    color: #FC7614;
+}
+
+div.card .response{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+div.card .response img{
+    width: 10.125em;
+    height: 6.75em;
+    flex-shrink: 0;
+    margin: 0 auto;
+}
+div.card .response .selected{
+    width: 80%;
+    padding: 0.4em;
+    margin: 0 auto;
+    border-radius: 22.5px;
+    background: var(--Dark-Blue, #262E38);
+    color: var(--Orange, #FC7614);
+    text-align: center;
+    font-size: 0.938em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5em; /* 160% */
+}
+
+@media (min-width: 601px)and (max-width: 1024px) {
+    div.content{
+        width: 70%;
+    }
+    div.card{
+        width: 60%;
+    }
+}
+
+/* MOBILE VIEW */
+@media (max-width: 600px) {
+   div.content{
+    width: 70%;
+   }
+    div.card{
+        padding: 1em;
+        width: 95%;
+        border-radius: 0.938em;
+    }
+}div.card h3{
+    font-size: 1.5em;
+}
+div.card p{
+    line-height: 1.375em;
+}
+div.card .ratings-btns{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+div.card .ratings-btns button{
+    width: 2em;
+    height: 2em;
+    line-height: 1em;
+    font-size: 0.938em;
+    letter-spacing: 0.011em;
+}
+div.card button{
+    letter-spacing: 0.117em;
+}
+div.card .response{
+    gap: 1em;
+}
+div.card .response img{
+    width: 9em;
+    height: 6em;
+    flex-shrink: 0;
+    margin: 0 auto;
+}
