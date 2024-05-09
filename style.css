@@ -127,19 +127,15 @@ div.card .response .selected{
     div.content{
         width: 70%;
     }
-    div.card{
-        width: 60%;
-    }
 }
 
 /* MOBILE VIEW */
 @media (max-width: 600px) {
    div.content{
-    width: 70%;
+    width: 90%;
    }
     div.card{
         padding: 1em;
-        width: 95%;
         border-radius: 0.938em;
     }
 }div.card h3{
